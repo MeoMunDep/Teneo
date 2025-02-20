@@ -52,29 +52,20 @@ Download Node.js and npm here: [Download Link](https://t.me/KeoAirDropFreeNe/257
   "isSkipInvalidProxy": false,
   "rotateProxy": false,
   "skipInvalidProxy": false,
-  "proxyRotationInterval": 2,
-  "referralCode": "gJMws"
+  "proxyRotationInterval": 2
 }
 
 ```
 
-### 2. `emails.txt` 🗂️ - Your emails address.
+### 2. `tokens.txt` 🗂️ - Get it from here > [Link](https://t.me/KeoAirDropFreeNee/1452)
 
 ```txt
-email...
-email...
-email...
+ey...
+ey...
+ey...
 ```
 
-### 3. `passwords.txt` 💼 - Your passwords's emails.
-
-```txt - wallet address
-pass...
-pass...
-pass...
-```
-
-### 4. `proxies.txt` 🌐 - Proxy is an option. If you have one, fill it in; otherwise, leave it blank.
+### 3. `proxies.txt` 🌐 - Proxy is an option. If you have one, fill it in; otherwise, leave it blank.
 
 ```txt
 http://user:password@host:port
