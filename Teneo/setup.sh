@@ -36,14 +36,13 @@ create_default_configs() {
   "isSkipInvalidProxy": false,
   "rotateProxy": false,
   "skipInvalidProxy": false,
-  "proxyRotationInterval": 2,
-  "referralCode": "gJMws"
+  "proxyRotationInterval": 2
 }
 EOL
 }
 
 check_configs() {
-    if ! node -e "const cfg=require('./configs.json');if(typeof cfg.howManyAccountsRunInOneTime !== 'number' || cfg.howManyAccountsRunInOneTime < 1) throw new Error('Invalid config');" 2>/dev/null; then
+    if ! node -e "const cfg=require('./configs.json');if(typeof cfg.limit !== 'number' || cfg.limit < 1) throw new Error('Invalid config');" 2>/dev/null; then
         print_red "Invalid configuration detected. Resetting to default values..."
         create_default_configs
         print_green "Configuration reset completed."
@@ -71,7 +70,7 @@ while true; do
             clear
             print_yellow "Installing/Updating Node.js dependencies..."
             cd "$MODULES_DIR"
-            npm install user-agents axios colors p-limit https-proxy-agent socks-proxy-agent crypto-js ws uuid xlsx readline-sync
+            npm install user-agents axios colors p-limit https-proxy-agent socks-proxy-agent crypto-js ws uuid 
             cd - > /dev/null
             print_green "Dependencies installation completed!"
             read -p "Press Enter to continue..."
@@ -87,7 +86,7 @@ while true; do
 
             check_configs
 
-            for file in datas.txt wallets.txt proxies.txt; do
+            for file in tokens.txt proxies.txt; do
                 if [ ! -f "$file" ]; then
                     touch "$file"
                     print_green "Created $file"
