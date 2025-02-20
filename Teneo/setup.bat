@@ -54,14 +54,11 @@ cls
 echo Creating configuration files...
 
 
-if not exist datas.txt (
-    type nul > datas.txt
-    echo Created datas.txt
+if not exist tokens.txt (
+    type nul > tokens.txt
+    echo Created tokens.txt
 )
-if not exist wallets.txt (
-    type nul > wallets.txt
-    echo Created wallets.txt
-)
+
 if not exist proxies.txt (
     type nul > proxies.txt
     echo Created proxies.txt
