@@ -31,7 +31,6 @@ create_default_configs() {
     cat > configs.json << EOL
 {
   "limit": 1,
-  "country_time": "en-US",
   "delayEachAccount": [5, 8],
   "isSkipInvalidProxy": false,
   "rotateProxy": false,
@@ -70,7 +69,7 @@ while true; do
             clear
             print_yellow "Installing/Updating Node.js dependencies..."
             cd "$MODULES_DIR"
-            npm install user-agents axios colors p-limit https-proxy-agent socks-proxy-agent crypto-js ws uuid 
+            npm install user-agents axios meo-forkcy-colors meo-forky-utils https-proxy-agent socks-proxy-agent crypto-js ws 
             cd - > /dev/null
             print_green "Dependencies installation completed!"
             read -p "Press Enter to continue..."
