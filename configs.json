@@ -1,6 +1,5 @@
 {
   "limit": 1,
-  "country_time": "en-US",
   "delayEachAccount": [5, 8],
   "isSkipInvalidProxy": false,
   "rotateProxy": false,
