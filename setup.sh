@@ -69,7 +69,7 @@ while true; do
             clear
             print_yellow "Installing/Updating Node.js dependencies..."
             cd "$MODULES_DIR"
-            npm install user-agents axios meo-forkcy-colors meo-forky-utils https-proxy-agent socks-proxy-agent crypto-js ws 
+            npm install user-agents axios meo-forkcy-colors meo-forkcy-proxy meo-forkcy-logger meo-forkcy-utils crypto-js ws 
             cd - > /dev/null
             print_green "Dependencies installation completed!"
             read -p "Press Enter to continue..."
