@@ -1,8 +1,8 @@
 📞 Contact
 
-> [Termux guides if you run on mobile](https://github.com/MeoMunDep/Guides-for-using-my-script-on-termux)
+[Termux guides if you run on mobile](https://github.com/MeoMunDep/Guides-for-using-my-script-on-termux)
 
-> If you encounter any issues or have questions, feel free to reach out:
+If you encounter any issues or have questions, feel free to reach out:
 
 - Contact: [Link](t.me/MeoMunDep)
 - Group: [Link](t.me/KeoAirDropFreeNe)
@@ -30,7 +30,7 @@ Download Node.js and npm here: [Download Link](https://t.me/KeoAirDropFreeNe/257
 1. **Install Dependencies and Modules:**
 
    ```
-   npm i user-agents axios colors p-limit https-proxy-agent socks-proxy-agent crypto ws uuid
+   npm i user-agents axios meo-forkcy-colors meo-forkcy-proxy meo-forkcy-logger meo-forkcy-utils ws
    ```
 
 2. **Prepare Configuration Files:**
